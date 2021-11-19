@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 100rem;
+    height: 40rem;
+    display: flex;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(244, 38%, 16%);
+    margin: 0 40rem 0 40rem;
+    border-radius: 0.5rem;
+}
+
+.card .card-container{
+    margin: 3rem;
+    padding: 3rem 0px 0px 5rem;
+}
+
+.card .card-container .card-colored-text{
+    color:  hsl(277, 64%, 61%);
+}
+
+.card .card-header{
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+.card .card-content{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card .card-image-container{
+    width: 80rem;
+    background-image: linear-gradient(hsla(277, 64%, 61%, 0.63) 100%, hsla(277, 64%, 61%, 0.63) 100%),url("./images/image-header-desktop.jpg");
+    background-size: cover;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.card .card-content{
+    margin-top: 3rem;
+    width: 40rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card .card-data{
+    margin-top: 4rem;
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-data-content .card-data-number{
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-data-content .card-data-text{
+    padding-top: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+@media only screen and (max-width: 993px){
+    .card{
+        width: 90rem;
+        height: 35rem;
+    }
+    .card .card-header{
+        font-family: 'Inter', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .card .card-content{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        margin: 15rem 0 15rem 0;
+    }
+    .card{
+        flex-wrap: wrap-reverse;
+        width: 50rem;
+        height: 40rem;
+    }
+    .card .card-container{
+        margin: 2rem;
+        padding: 2rem 0px 0px 2rem;
+    }    
+    .card .card-header{
+        font-size: 2rem;
+    }
+    .card .card-content{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1.2rem;
+    }
+    .card .card-image-container{
+        width: 50rem;
+        height: 20rem;
+        background-image: linear-gradient(hsla(277, 64%, 61%, 0.63) 100%, hsla(277, 64%, 61%, 0.63) 100%),url("./images/image-header-desktop.jpg");
+        background-size: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .card .card-content{
+        margin-top: 2rem;
+        width: 35rem;
+    }
+    .card .card-data{
+        margin-top: 2rem;
+        width: 30rem;
+        margin-bottom: 3rem;
+    }
+    .card-data-content .card-data-number{
+        font-size: 1.6rem;
+    }
+    .card-data-content .card-data-text{
+        padding-top: 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+    body{
+        margin: 30rem 0 10rem 0;
+    }
+    .card{
+        width: 30rem;
+        height: 40rem;
+        
+    }
+    .card .card-container{
+        margin: 0;
+        padding: 1rem 0px 0px 0rem;
+    } 
+    .card .card-header{
+        padding: 1rem 2rem 0 2rem;
+        text-align: center;
+        font-size: 2.5rem;
+        height: 8rem;
+        width: 30rem;
+    }
+    .card .card-content{
+        margin-top: 0;
+        padding: 4.5rem 5rem 0 2rem;
+    }
+    .card .card-data{
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 15rem;
+    }
+    .card-data-content .card-data-number{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .card-data-content .card-data-text{
+        padding-top: 0.8rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
